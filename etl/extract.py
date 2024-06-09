@@ -6,6 +6,6 @@ def extract_data(file_path):
         data = pd.read_csv(file_path)
         return data
     except Exception as e:
-        raise Exception(f"Error while extracting data: {str(e)}")
+        raise Exception(f"Error while extracting dataset: {str(e)}")
 
 
