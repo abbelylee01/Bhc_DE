@@ -1,3 +1,12 @@
 # config/config.yaml
-input_file_path: data/raw_store_transactions.csv
-db_connection: dbname=abiodunadeoye user=postgres password=bentlee11! host=localhost port=5432
+
+input_file_path : data/raw_store_transactions.csv
+#db_connection: dbname=abiodunadeoye user=postgres password=bentlee11! host=localhost port=5432
+
+# Load configuration from config.yaml
+      #  with open('config/config.yaml', 'r') as config_file:
+      #      config = yaml.safe_load(config_file)
+ 
+        # Extract data
+       # data = extract_data(config['input_file_path'])
+       # logging.info("Data extraction successful....")
