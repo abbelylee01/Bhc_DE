@@ -1,11 +1,17 @@
 # etl/extract.
-import pandas as pd 
 import yaml
+import pandas as pd
+
 # Load configuration from config.yml
-with open("config.yml", "r") as config_file:
-        config = yaml.safe_load(config_file)
+with open("config.yaml", "r") as file:
+        config = yaml.safe_load(file)
         print(config)
- 
+
+        df = pd.read_csv(config['file']) 
+
+        print(df.head(5))
+
+
         # Extract data
         #data = extract_data(config['input_file_path'])
        # logging.info("Data extraction successful....")
